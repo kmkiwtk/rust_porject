@@ -7,34 +7,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'rget'",
+            "name": "Debug executable 'os'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=rget",
-                    "--package=rget"
+                    "--target",
+                    "thumbv7em-none-eabihf"
                 ],
                 "filter": {
-                    "name": "rget",
-                    "kind": "bin"
-                }
-            },
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug unit tests in executable 'rget'",
-            "cargo": {
-                "args": [
-                    "test",
-                    "--no-run",
-                    "--bin=rget",
-                    "--package=rget"
-                ],
-                "filter": {
-                    "name": "rget",
+                    "name": "os",
                     "kind": "bin"
                 }
             },
