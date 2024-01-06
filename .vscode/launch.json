@@ -12,7 +12,7 @@
                 "args": [
                     "build",
                     "--target",
-                    "thumbv7em-none-eabihf"
+                    "x86_64-blog_os.json"
                 ],
                 "filter": {
                     "name": "os",
